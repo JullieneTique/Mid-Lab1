@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document</title> 
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            background: 1px skyblue;
+            padding: 20px;
+        }
+        p {
+            border:#2980b9;
+            margin: 30px #ddd;
+        }
+        
+        h2 {
+            color: #0000a0;
+        }
+        h3 {
+            color: teal;
+        }
+        hr {
+            color: black
+        }
+        input[type="Submit Answers"]:hover {
+            background: #2980b9
+        }
+    </style>
 </head>
 <body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
     <form>
         <h2>Textbox Questions</h2>
         <h3>1. What is the color of orange?</h3>
@@ -16,8 +42,8 @@
         <input type="text">
          <h3>4. What is your name?</h3>
         <input type="text">
-
-        <h2>Radio button Questions</h2>
+      <hr>
+        <h2>Radio Button Questions</h2>
         <h3>1. What is your gender?</h3>
         <input type="radio" name="gender">Female<br>
         <input type="radio" name="gender">Male<br>
@@ -26,33 +52,27 @@
         <input type="radio" name="capital">Cebu<br>
         <input type="radio" name="capital">Davao<br>
          <h3>3. What is the largest planet?</h3>
-         <input type="radio" name="capital">Earth<br>
-         <input type="radio" name="capital">Jupiter<br>
-         <input type="radio" name="capital">Mars<br>
-
+         <input type="radio" name="planet">Earth<br>
+         <input type="radio" name="planet">Jupiter<br>
+         <input type="radio" name="planet">Mars<br>
+        <hr>
          <h2>Checkbox Questions</h2>
          <h3>1. Which of the following are fruits? (Select all that apply)</h3>
         <input type="checkbox" name="fruits">Apple<br>
         <input type="checkbox" name="fruits">Carrot<br>
         <input type="checkbox" name="fruits">Mango<br>
         <h3>2. Which of the followings are animals? (Select all that apply)</h3>
-        <input type="checkbox" name="capital">Manila<br>
-        <input type="checkbox" name="capital">Cebu<br>
-        <input type="checkbox" name="capital">Davao<br>
+        <input type="checkbox" name="capital">Dog<br>
+        <input type="checkbox" name="capital">Cat<br>
+        <input type="checkbox" name="capital">Rabbit<br>
          <h3>3. Which of these are web technologies? (Select all that apply)</h3>
          <input type="checkbox" name="web">HTML<br>
          <input type="checkbox" name="web">Phyton<br>
          <input type="checkbox" name="web">Java<br>
 
-
-
-        
-
-
-
-        
-       
-        <button>Submit</button>
+        <button>Submit Answers</button>
     </form>
+
+
 </body>
 </html>
